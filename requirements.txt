@@ -1,0 +1,5 @@
+# Basic packages used in many of the tutorials.
+# pip install -r requirements.txt
+
+# REST for Python
+Flask==0.10.1
