@@ -1,4 +1,8 @@
 import unittest
+import sys
+sys.path.append('../main/')
+
+from diet import Diet
 
 class DietTest(unittest.TestCase):
     def test(self):
@@ -12,12 +16,9 @@ class DietTest(unittest.TestCase):
         diet = Diet(0.9, 4, 5, 30)
         
         # Values of object
-        self.assertEqual(diet.minimum_price(), 5)
-        self.assertEqual(diet.maximum_price, 30)
-        
-        # Values of class
-        self.assertEqual(Diet.minimum_price(), 10)
-        self.assertEqual(Diet.maximum_price, 20)
+        self.assertEqual(diet.minimum_price, 5.0)
+        self.assertEqual(diet.maximum_price, 30.0)
+    
 
 if __name__ == '__main__':
     unittest.main()

@@ -2,7 +2,7 @@ class Diet:
   minimum_price = 10
   maximum_price = 20
   
-  def __init__(self, factor, pounds_per_month, minimum_price = Diet.minimum_price, maximum_price = Diet.maximum_price):
+  def __init__(self, factor, pounds_per_month, minimum_price = 10, maximum_price = 20):
     self.factor = factor
     self.pounds_per_month = pounds_per_month
     self.minimum_price = minimum_price

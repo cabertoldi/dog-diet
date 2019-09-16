@@ -8,7 +8,7 @@ from index import get_diet
 app = Flask(__name__)
 
 @app.route('/diet', methods=['POST'])
-def diet(): 
+def diet():
     params = request.get_json()
 
     data = get_diet(params)
